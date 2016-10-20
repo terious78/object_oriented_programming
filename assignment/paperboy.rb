@@ -31,21 +31,22 @@ class PaperBoy
 #               'start_address' = smaller number than the
 #               'end_address'
   def deliver(start_address, end_address)
-    experience = (end_address - start_address)
+    experience = (end_address - (start_address - 1))
 
     if experience < quota
-      "You did less than quota, you loss $2 $#{experience * 0.25 - 2.0}"
+      (experience * 0.25 - 2.0)
     elsif experience == quota
-      "You earn $#{experience * 0.25}."
+      (experience * 0.25)
     else experience > quota
-      "You did more than quota, you earn $#{experience * 0.50}"
+      (experience * 0.50)
     end
   end
 
   def report
-
+    puts "Hi, my name is #{@name}.
+          I have delivered #{@experience} papers and earned $#{@earnings} so far!"
   end
 
 end
 
-tommy = PaperBoy.new("Tommy", "even")
+tommy = PaperBoy.new("Tommy", 0, 0)
