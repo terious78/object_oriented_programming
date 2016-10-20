@@ -37,4 +37,4 @@ sparkles = Cat.new('Sparkles', 'Ham', 19)
 # 6. Call the 'meow' method
 #    on each of the cats in Step 3
 garfield.meow
-sparkles.mewo
+sparkles.meow
