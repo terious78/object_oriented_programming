@@ -25,7 +25,7 @@ class Cat
 #    Returns a string of the cat telling
 #    Like this "My name is Sparkles and I eat.."
   def meow
-    " My name is #{@name} and I eat #{@preferred_food} at #{eats_at}."
+    puts " My name is #{@name} and I eat #{@preferred_food} at #{eats_at}."
   end
 end
 
