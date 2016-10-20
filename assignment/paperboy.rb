@@ -2,6 +2,7 @@
 # 1. Create Class
 class PaperBoy
 # 2. Create initialize method with several attributes;
+#    Getters and Setters for an instance variable
   attr_reader :earnings
   attr_accessor :name, :experience
 
